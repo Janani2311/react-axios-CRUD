@@ -52,8 +52,8 @@ let [flip,setFlip] = useState(false);
                                 <div className="flip-card-back text-xs font-weight-bold mb-1">
                                 
                                     <div className="position-absolute" style={{top: "0.5rem", right: "0.5rem"}}>
-                                        <EditIcon onClick={()=>navigate(`/profile/${dataItem.id}`)}/>&nbsp;&nbsp;
-                                        <DeleteForeverIcon onClick={()=>handleDelete(dataItem.id)}/>
+                                        <EditIcon classname='cursor' onClick={()=>navigate(`/profile/${dataItem.id}`)}/>&nbsp;&nbsp;
+                                        <DeleteForeverIcon classname='cursor' onClick={()=>handleDelete(dataItem.id)}/>
                                     </div>
                                     
                                     <p className='title mb-2'>Address:</p>
